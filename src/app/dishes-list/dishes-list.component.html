@@ -1,0 +1,9 @@
+<div class="panel panel-default">
+  <div class="panel-heading">{{dish.name}}</div>
+  <div class="panel-body">
+    <p>
+      <em *ngIf="dish.type === 'veg'" class="text-success">{{dish.content}}</em>
+      <em *ngIf="dish.type === 'nonveg'" class="text-danger">{{dish.content}}</em>
+    </p>
+  </div>
+</div>
