@@ -22,15 +22,7 @@
   </div>
 </div>
 <hr class="divider"/>
-<div class="panel panel-default" *ngFor="let dish of dishes">
-  <div class="panel-heading">{{dish.name}}</div>
-  <div class="panel-body">
-    <p>
-      <em *ngIf="dish.type === 'veg'" class="text-success">{{dish.content}}</em>
-      <em *ngIf="dish.type === 'nonveg'" class="text-danger">{{dish.content}}</em>
-    </p>
-  </div>
-</div>
+<app-dishes-list  *ngFor="let dishes of disheslist" [dish]="dishes"></app-dishes-list>
 
 </div>
 
